@@ -8,9 +8,9 @@ const Modal = ({ handleClose, show, children }) => {
     <div className={showHideClassName}>
       <div className={styles.modalContainer}>
         {children}
-        <a className='modal-close' onClick={handleClose}>
+        <button type='button' className='modal-close' onClick={handleClose}>
           close
-        </a>
+        </button>
       </div>
     </div>
   );

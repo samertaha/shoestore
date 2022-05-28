@@ -9,7 +9,7 @@ function Product() {
   React.useEffect(() => {
     const prod = productData.find((p) => p.id === id * 1);
     setProduct(prod);
-  }, []);
+  }, [id]);
 
   return (
     <div>
