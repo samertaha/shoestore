@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { useParams } from 'react-router-dom';
 import shoe1 from '../images/nike-shoes-1425208.jpg';
 import shoe2 from '../images/shoes-1543886.jpg';
 import shoe3 from '../images/shoes-1422387.jpg';
 
 export default function Home() {
+  const { id } = useParams();
   return (
     <div
       id='carouselExampleSlidesOnly'
@@ -12,6 +13,7 @@ export default function Home() {
       data-ride='carousel'
       style={{ width: '100%' }}
     >
+      {id}
       <div className='carousel-inner'>
         <div
           className='carousel-item active'
